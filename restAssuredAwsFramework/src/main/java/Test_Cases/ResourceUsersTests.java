@@ -25,7 +25,7 @@ public class ResourceUsersTests {
 		json.put("id", "6178439");
 		json.put("name", "This is the Sujit Singh");
 		json.put("email", "sujit@example.com");
-		json.put("address", "Atlanta, GA");
+		json.put("address", "Atlanta, GA USA");
 		request.body(json.toJSONString());
 		Response response = request.post(" http://ec2-54-84-52-184.compute-1.amazonaws.com:3000/users");
 				int code = response.getStatusCode();
@@ -55,7 +55,7 @@ public class ResourceUsersTests {
 		json.put("id", "6178439");
 		json.put("name", "This is the Sujit Singh");
 		json.put("email", "sujit@example.com");
-		json.put("address", "Atlanta, GA");
+		json.put("address", "Atlanta, GA usa");
 		request.body(json.toJSONString());
 		Response response = request.put(" http://ec2-54-84-52-184.compute-1.amazonaws.com:3000/users/6178439");
 				int code = response.getStatusCode();
