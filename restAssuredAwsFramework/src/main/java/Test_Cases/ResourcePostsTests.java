@@ -23,7 +23,7 @@ import junit.framework.Assert;
 			json.put("id", "6178439");
 			json.put("userId", "2011");
 			json.put("body", "This is the Sujit's body");
-			json.put("title", "This is Sujit's Title");
+			json.put("title", "This is Sujit's Titles");
 			request.body(json.toJSONString());
 			Response response = request.post(" http://ec2-54-84-52-184.compute-1.amazonaws.com:3000/posts");
 					int code = response.getStatusCode();

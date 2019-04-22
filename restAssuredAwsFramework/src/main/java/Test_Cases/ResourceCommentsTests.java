@@ -24,7 +24,7 @@ public class ResourceCommentsTests {
 		json.put("id", "6178439");
 		json.put("name", "This is the Sujit Singh");
 		json.put("email", "sujit@example.com");
-		json.put("body", "Testing Body");
+		json.put("body", "Testing Bodys");
 		request.body(json.toJSONString());
 		Response response = request.post(" http://ec2-54-84-52-184.compute-1.amazonaws.com:3000/comments");
 				int code = response.getStatusCode();
